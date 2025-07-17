@@ -1,3 +1,16 @@
+-- ==========================
+-- Project: Bestseller Books
+-- File: prepare_data.sql
+-- Author: Wipadee S.
+-- Purpose: Clean and prepare data for Power BI analysis
+-- ==========================
+-- Note: During initial data import, the CSV header row was not recognized.
+-- The first row was inserted as a data row, causing incorrect column alignment.
+-- Steps taken:
+-- 1. Deleted the first row from the table.
+-- 2. Renamed all columns manually to: Name, Author, User_Rating, Reviews, Price, Year, Genre.
+-- This ensures the data is clean and ready for analysis.
+
 -- ##Step 1: Import data
 
 -- ##Step 2: Change column name
@@ -12,6 +25,7 @@ WHERE Name='Name'
 -- ## Step 4: Query data to check information
 SELECT * 
 FROM `bestsellers_with_categories_1` 
+LIMIT 10;
 -- #Output: The first column has been deleted.
 
 
