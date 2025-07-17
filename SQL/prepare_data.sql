@@ -13,21 +13,20 @@
 
 -- ##Step 1: Import data
 
--- ##Step 2: Change column name
-SELECT COL 1='Name',COL 2='Author',COL 3='User_Rating',COL 4='Reviews',COL 5='Price',COL 6='Year',COL 7='Genre' 
-FROM `bestsellers_with_categories_1`
--- #Output: Column=(Name,Author,User_Rating,Reviews,Price,Year,Genre)
-
--- ## Step 3: Delete the first column
+-- ## Step 2: Delete the first column
 DELETE FROM `bestsellers_with_categories_1` 
-WHERE Name='Name'
+WHERE COL 1='Name'
 
--- ## Step 4: Query data to check information
+-- ## Step 3: Query data to check information
 SELECT * 
 FROM `bestsellers_with_categories_1` 
 LIMIT 10;
 -- #Output: The first column has been deleted.
-
+	
+-- ##Step 4: Change column name
+SELECT COL 1='Name',COL 2='Author',COL 3='User_Rating',COL 4='Reviews',COL 5='Price',COL 6='Year',COL 7='Genre' 
+FROM `bestsellers_with_categories_1`
+-- #Output: Column name=(Name,Author,User_Rating,Reviews,Price,Year,Genre)
 
 -- ## Step 5: Change data type
 ALTER TABLE bestsellers_with_categories_1
