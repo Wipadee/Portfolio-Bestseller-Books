@@ -153,7 +153,6 @@ HAVING COUNT(*) > 1;
 -- Brown Bear, Brown Bear,...		Bill Martin Jr.		4.9		14344	5	2017	Fiction		2
 -- Catching Fire (The Hunger Games)	Suzanne Collins		4.7		22614	11	2010	Fiction		3
 
-
 -- #Step 12: Check quantity duplicate values in the 'Name' column.
 SELECT COUNT(Name)
 FROM bestsellers_with_categories_1
