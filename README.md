@@ -155,9 +155,13 @@ Job: Entry-level Data Analyst (Open to work)
 
 ### File 
 **1.Raw data File**: https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Raw%20data
-**2.SQL Script File**: https://github.com/Wipadee/Portfolio-Bestseller-Books/blob/main/SQL/prepare_data.sql   
+
+**2.SQL Script File**: https://github.com/Wipadee/Portfolio-Bestseller-Books/blob/main/SQL/prepare_data.sql 
+
 **3.Data:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Data
+
 **4.Power BI File:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Power%20BI
+
 **5.Dashboard PDF:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/assets
 
 
