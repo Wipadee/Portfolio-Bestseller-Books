@@ -1,41 +1,55 @@
 # Bestseller Books Dashboard
 
-A Data Analysis and Dashboard Project based on bestseller book data (2009–2019), focusing on trends, genres, ratings, and pricing.
+A data analysis and interactive dashboard project exploring Amazon's bestselling books (2009–2019) — focusing on trends, genres, user ratings, and pricing patterns.
 
 ---
 
 ## Project Overview
 
-This project explores the bestselling books dataset from Amazon between 2009–2019. It covers data cleaning using SQL, dataset restructuring, and building a professional Power BI dashboard to uncover key insights.
+This project covers the end-to-end process of data preparation using SQL and dashboard building with Power BI. It aims to uncover insights such as:
+
+- Which genres perform best?
+- How do prices and ratings evolve over time?
+- Who are the most frequent bestselling authors?
 
 ---
 
 ## Folder Structure
-**Portfolio-Bestseller-Books/**
-├── SQL/
-│ └── prepare_data.sql
-├── CSV/
+Portfolio-Bestseller-Books/
+│
+├── 📂 Data/
 │ ├── bestsellers_summary.csv
 │ └── bestsellers_per_year.csv
-├── PowerBI/
-│ └── Bestseller Books.pbix
+│
+├── 📂 PowerBI/
+│ └── Bestseller Books Dashboard.pbix
+│
+├── 📂 Raw data/
+│ └── bestsellers with categories.csv
+│
+├── 📂 SQL/
+│ └── prepare_data.sql
+│
+├── 📂 assets/
+│ └── Preview Dashboard.zip
+├
+README.md
+
+
 ---
 
 ## Data Preparation (SQL)
 
-- Tool: **MySQL / phpMyAdmin (XAMPP)**
-- Dataset: `bestsellers_with_categories.csv`
-- Actions:
-  - Removed unnecessary rows (e.g., column names in first row)
-  - Renamed all column headers
-  - Removed exact duplicates (price + year)
-  - Grouped books by name to calculate:
+- Tool: **MySQL via XAMPP/phpMyAdmin**
+- Source: `bestsellers_with_categories.csv` (from Kaggle)
+- Steps in `prepare_data.sql`:
+  - Removed extra rows and renamed headers
+  - Removed exact duplicates (same name + year + price)
+  - Aggregated by book name:
     - `AVG(User_Rating)`, `AVG(Price)`, `AVG(Reviews)`
-    - `Years_List` → list of years the book was a bestseller
-    - `Count_Years` → how many years it was on the list
-- Exported 2 datasets for Power BI:
-  - 📄 `bestsellers_summary.csv`
-  - 📄 `bestsellers_per_year.csv`
+    - `Years_List`: list of years as bestseller
+    - `Years_Count`: total years on list
+  - books by year
 
 🔗 [SQL Script](./SQL/prepare_data.sql)
 
@@ -43,77 +57,99 @@ This project explores the bestselling books dataset from Amazon between 2009–2
 
 ## Power BI Dashboard
 
-### Dashboard Pages:
+### 1. Cover Page
+- Title, author name, project description
+- Background image of books
 
-1. **Dashboard overview**
-   - Project title, Project details
-3. **Summary by Book**
-   - Table: AVG Rating / Price / Reviews per book
-   - Tooltip: Book details
-   - Bar chart: Average Rating per Genre
-   - Bar chart: Average Price per Genre
-   - Donut chart: Fiction vs Non-Fiction
-4. **Trend by Year 1**
-   - Line: Rating trend by Genre
-   - Column: Bestseller count per Year
-5. **Trend by Year 2**
-   - Scatter Chart: Reviews vs Price and Rating
-   - Line: Price trend by Genre
-6. **Insights & Highlight**
-   - Top-rated book
-   - Most reviewed book
-   - Most frequent author
-   - Heatmap: Genre x Year
-7. **Cover Page**
-   - Project title, author info
+### 2. Summary by Book
+📄 From: `bestsellers_summary.csv`  
+**Includes:**
+- Slicer: Name, Years Count, Genre
+- Bar: Average Price by Genre
+- Donut: Average Rating by Genre
+- Tooltip: Name, Author, Years List
 
-🔗 [Power BI File](./Power BI/Bestseller Books Dashboard.pbix)
+*Shows book-level overview and genre comparison*
+
+### 3. Trend by Year
+📄 From: `bestsellers_per_year.csv`  
+**Includes:**
+- Line: Rating trend by Genre
+- Line: Price trend by Genre
+- Column: Bestseller count by Year & Genre
+- Scatter: Price vs Rating vs Reviews
+- Tooltip: Name, Author
+- Slicer: Name, Year, Genre, Reviews
+
+*Shows changes in popularity and value over time*
+
+### 🟥 4. Insights & Highlight
+**Includes:**
+- Top Rated Book (KPI)
+- Most Reviewed Book (KPI)
+- Most Frequent Author (KPI)
+- Heatmap: Genre vs Year
+
+*Summarizes standout performers and genre trends*
 
 ---
 
-## Key Insights
+## 🔑 Key Questions Answered
 
-- **Fiction consistently outperformed Non-Fiction** in terms of rating.
-- **Business and Self-Help genres** had higher prices.
-- **Jeff Kinney** were the most frequent authors.
-- **Highest reviewed book** had reviewed close to 88K for multiple years.
+- Which genres consistently have high ratings?
+- Which books stayed on the list for many years?
+- Are prices increasing over time?
+- Which authors frequently appear as bestsellers?
+- What’s the relationship between reviews, ratings, and price?
+
+---
+
+## Dashboard Preview
+
+📄 [Click to View Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
+
+*Note: GitHub may not render large PDFs. Please download if preview fails.*
 
 ---
 
 ## 🧰 Tools Used
 
-| Tool            | Purpose                        |
-|-----------------|--------------------------------|
-| **SQL (MySQL)** | Data cleaning & transformation |
-| **Power BI**    | Interactive visualization      |
-| **Excel**       | Quick data inspection          |
+| Tool         | Purpose                        |
+|--------------|--------------------------------|
+| SQL (MySQL)  | Data cleaning & transformation |
+| Power BI     | Dashboard creation             |
+| Excel        | Quick file check               |
 
 ---
 
 ## Dataset Source
 
-- [Amazon Bestsellers Dataset (2009–2019) – Kaggle](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
+[Kaggle – Amazon Top 50 Bestselling Books (2009–2019)](https://www.kaggle.com/datasets/sootersaalu/amazon-top-50-bestselling-books-2009-2019)
 
 ---
 
 ## Author
 
 **Wipadee S.**  
-Emai:*wipadees@hotmail.com*  
-Job: Entry-level Data Analyst  
-Status: Open to work 
+Email: *wipadees@hotmail.com*  
+Job: Entry-level Data Analyst (Open to work)
 
 ---
 
-## Ready to Explore?
+## Quick Access to Files
 
-Click below to view the main files:
-
--  [SQL Script](./SQL/prepare_data.sql)
--  [CSV: Summary Table](./CSV/bestsellers_summary.csv)
--  [CSV: Yearly Detail Table](./CSV/bestsellers_per_year.csv)
--  [Power BI Dashboard](./PowerBI/Bestseller%20Books.pbix)
+| File Type      | File Link |
+|----------------|-----------|
+| Power BI File  | [Bestseller Books.pbix](./PowerBI/Bestseller%20Books.pbix) |
+| Dashboard PDF  | [Dashboard Preview (PDF)](./PowerBI/Bestseller%20Books%20Dashboard.pdf) |
+| SQL Script     | [prepare_data.sql](./SQL/prepare_data.sql) |
+| CSV (Summary)  | [bestsellers_summary.csv](./CSV/bestsellers_summary.csv) |
+| CSV (Per-Year) | [bestsellers_per_year.csv](./CSV/bestsellers_per_year.csv) |
 
 ---
 
-**> If you find this project helpful, feel free to star or fork the repo!**
+## Like this project?
+
+If this project helped you or inspired your portfolio:
+> Give it a ⭐ star or fork the repo to share!
+
