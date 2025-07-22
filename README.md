@@ -2,6 +2,10 @@
 
 A data analysis and interactive dashboard project exploring Amazon's bestselling books (2009–2019) — focusing on trends, genres, user ratings, and pricing patterns.
 
+![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow?logo=powerbi)
+![SQL](https://img.shields.io/badge/Tool-SQL-blue?logo=mysql)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 ---
 
 ## Project Overview
@@ -91,6 +95,25 @@ README.md
 - Heatmap: Genre vs Year
 
 *Summarizes standout performers and genre trends*
+### Dashboard Preview
+
+![Dashboard Preview](./PowerBI/dashboard_preview.png)
+
+## How to View the Dashboard
+
+- Open `Bestseller Books.pbix` with Power BI Desktop (Free download from Microsoft)
+
+## Full Dashboard Preview
+
+📄 [Click to View Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
+
+*Note: GitHub may not render large PDFs. Please download if preview fails.*
+- Or download and open the PDF version:
+  📄 [Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
+
+⚠️ *Note: GitHub may not preview large PDF or PBIX files — download them to view.*
+
+
 
 ---
 
@@ -104,11 +127,6 @@ README.md
 
 ---
 
-## Dashboard Preview
-
-📄 [Click to View Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
-
-*Note: GitHub may not render large PDFs. Please download if preview fails.*
 
 ---
 
@@ -145,6 +163,12 @@ Job: Entry-level Data Analyst (Open to work)
 | SQL Script     | [prepare_data.sql](./SQL/prepare_data.sql) |
 | CSV (Summary)  | [bestsellers_summary.csv](./CSV/bestsellers_summary.csv) |
 | CSV (Per-Year) | [bestsellers_per_year.csv](./CSV/bestsellers_per_year.csv) |
+
+## Future Improvements
+
+- Connect live Power BI to database for auto-refresh
+- Add more KPIs and dynamic user interaction
+- Expand dataset to include sales numbers or international bestsellers
 
 ---
 
