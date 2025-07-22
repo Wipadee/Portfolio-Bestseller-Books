@@ -67,7 +67,7 @@ This project explores the bestselling books dataset from Amazon between 2009–2
 7. **Cover Page**
    - Project title, author info
 
-🔗 [Power BI File](Power BI/Bestseller Books Dashboard.pbix)
+🔗 [Power BI File](./Power BI/Bestseller Books Dashboard.pbix)
 
 ---
 
