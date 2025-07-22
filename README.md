@@ -4,7 +4,6 @@ A data analysis and interactive dashboard project exploring Amazon's bestselling
 
 ![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow?logo=powerbi)
 ![SQL](https://img.shields.io/badge/Tool-SQL-blue?logo=mysql)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
@@ -100,19 +99,17 @@ README.md
 ![Dashboard Preview](./PowerBI/dashboard_preview.png)
 
 ## How to View the Dashboard
-
-- Open `Bestseller Books.pbix` with Power BI Desktop (Free download from Microsoft)
-
-## Full Dashboard Preview
-
-📄 [Click to View Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
-
-*Note: GitHub may not render large PDFs. Please download if preview fails.*
-- Or download and open the PDF version:
-  📄 [Dashboard PDF](./PowerBI/Bestseller%20Books%20Dashboard.pdf)
-
 ⚠️ *Note: GitHub may not preview large PDF or PBIX files — download them to view.*
 
+- Open Power BI folder.
+- Open `Bestseller Books.pbix` with Power BI Desktop (Free download from Microsoft)
+- Click "View raw" to download `Bestseller Books.pbix`
+
+## Full Dashboard Preview 
+⚠️ *Note: GitHub may not preview large PDF or PBIX files — download them to view.*
+
+- Open assets folder.
+- Click "View raw" to download `Preview Dashboard.zip` to view preview dashboard pdf
 
 
 ---
@@ -156,13 +153,13 @@ Job: Entry-level Data Analyst (Open to work)
 
 ## Quick Access to Files
 
-| File Type      | File Link |
-|----------------|-----------|
-| Power BI File  | [Bestseller Books.pbix](./PowerBI/Bestseller%20Books.pbix) |
-| Dashboard PDF  | [Dashboard Preview (PDF)](./PowerBI/Bestseller%20Books%20Dashboard.pdf) |
-| SQL Script     | [prepare_data.sql](./SQL/prepare_data.sql) |
-| CSV (Summary)  | [bestsellers_summary.csv](./CSV/bestsellers_summary.csv) |
-| CSV (Per-Year) | [bestsellers_per_year.csv](./CSV/bestsellers_per_year.csv) |
+### File 
+**1.Raw data File**: https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Raw%20data
+**2.SQL Script File**: https://github.com/Wipadee/Portfolio-Bestseller-Books/blob/main/SQL/prepare_data.sql   
+**3.Data:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Data
+**4.Power BI File:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/Power%20BI
+**5.Dashboard PDF:** https://github.com/Wipadee/Portfolio-Bestseller-Books/tree/main/assets
+
 
 ## Future Improvements
 
