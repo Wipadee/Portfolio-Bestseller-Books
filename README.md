@@ -20,22 +20,28 @@ This project covers the end-to-end process of data preparation using SQL and das
 ## Folder Structure
 Portfolio-Bestseller-Books/
 │
+
 ├── 📂 Data/
 │ ├── bestsellers_summary.csv
 │ └── bestsellers_per_year.csv
 │
+
 ├── 📂 PowerBI/
 │ └── Bestseller Books Dashboard.pbix
 │
+
 ├── 📂 Raw data/
 │ └── bestsellers with categories.csv
 │
+
 ├── 📂 SQL/
 │ └── prepare_data.sql
 │
+
 ├── 📂 assets/
 │ └── Preview Dashboard.zip
 ├
+
 README.md
 
 
